@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publicar Servicio</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Publicar un Nuevo Servicio</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="publicarservicio.html">Publicar Servicio</a>
+        <a href="micuentaymercado de servicios.html">Mi Cuenta</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+  </header>
+
+  <form action="/guardar-servicio" method="POST" enctype="multipart/form-data">
+    <div class="input-group">
+      <label for="foto">1. Subir Foto del Servicio:</label>
+      <input type="file" id="foto" name="foto" accept="image/*" required>
+    </div>
+
+    <div class="input-group">
+      <label for="nombre-servicio">2. Nombre del Servicio:</label>
+      <input type="text" id="nombre-servicio" name="nombre-servicio" placeholder="Ej. Reparación de pantalla" required>
+    </div>
+
+    <div class="input-group">
+      <label for="tipo-servicio">3. Tipo de Servicio:</label>
+      <select id="tipo-servicio" name="tipo-servicio" required>
+        <option value="hogar-reparaciones">Hogar y Reparaciones</option>
+        <option value="tecnologia">Tecnología</option>
+        <option value="educacion">Educación</option>
+        <option value="salud-bienestar">Salud y Bienestar</option>
+        <option value="eventos">Eventos</option>
+        <option value="negocios">Negocios</option>
+      </select>
+    </div>
+
+    <button type="submit">Publicar Servicio</button>
+  </form>
+
+  <footer>
+    <p>&copy; 2025 Mercado de Servicios - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
